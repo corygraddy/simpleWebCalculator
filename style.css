@@ -1,0 +1,36 @@
+
+td{
+  vertical-align: center;
+}
+.calcBody{
+  background-color: tan;
+  height: 386px;
+  width: 258px;
+  border-radius: 5px;
+}
+.button{
+  border-color: black;
+  border-width: 2px;
+  background-color: lightgreen;
+  height: 60px;
+  width: 60px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 25px;
+}
+#display{
+  text-align: right;
+  border-color: black;
+  border-width: 2px;
+  background-color: lightgrey;
+  height: 60px;
+  width: 252px;
+  border-radius: 5px;
+  font-size: 35px;
+}
+#equals{
+  height: 124px;
+}
+#zero{
+  width: 124px;
+}
