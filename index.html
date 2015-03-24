@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="//cdnjs.cloudflare.com/ajax/libs/processing.js/1.4.1/processing-api.min.js"></script>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+<body>
+  <div class = "calcBody">
+    <table>
+      <tr>
+        <th colspan="4">
+          <div id = "display"><p id="pDisplay"></p></div>
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <button onclick="clear();" id="clear" class="button">c</button>
+        </td>
+        <td>
+          <button onclick="negate();" id="negOrPos" class = "button">+/-</button>
+        </td>
+        <td>
+          <button onclick="applyOperation('divide');" id="divide" class = "button">/</button>
+        </td>
+        <td>
+          <button onclick="applyOperation('multiply');" id="multiply" class = "button">x</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button onclick="applyNumber('7');" id="seven" class = "button">7</button>
+        </td>
+        <td>
+          <button onclick="applyNumber('8');" id="eight" class = "button">8</button>
+        </td>
+        <td>
+          <button onclick="applyNumber('9');" id="nine" class = "button">9</button>
+        </td>
+        <td>
+          <button onclick="applyOperation('minus');" id="minus" class = "button">-</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button onclick="applyNumber('4');" id="four" class = "button">4</button>
+        </td>
+        <td>
+          <button onclick="applyNumber('5');" id="five" class = "button">5</button>
+        </td>
+        <td>
+          <button onclick="applyNumber('6');" id="six" class = "button">6</button>
+        </td>
+        <td>
+          <button onclick="applyOperation('plus');" id="plus" class = "button">+</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button onclick="applyNumber('1');" id="one" class = "button">1</button>
+        </td>
+        <td>
+          <button onclick="applyNumber('2');" id="two" class = "button">2</button>
+        </td>
+        <td>
+          <button onclick="applyNumber('3');" id="three" class = "button">3</button>
+        </td>
+        <td rowspan="2">
+          <button onclick="equals();" id="equals" class = "button">=</button>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <button onclick="applyNumber('0');" id="zero" class = "button">0</button>
+        </td>
+        <td>
+          <button onclick="applyNumber('.');" id="decimal" class = "button">.</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>
