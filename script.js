@@ -11,7 +11,6 @@ function updateDisplay(s){
   //document.getElementById('display').appendChild(newEl);
   //console.log(s);
   document.getElementById("pDisplay").innerHTML = s;
-
 }
 var n = "";//passed in the applyNum when number button is pushed
 var x = "";//num 1
@@ -22,19 +21,19 @@ var p = 0;//holder before it's converted to string
 //applies the operation to x and y then puts that to x
 //clears y and the operator
 function useOperation(){
-  if(o==='plus'){
+  if(o === 'plus'){
       p = parseFloat(x)+parseFloat(y);
       x = p.toString();
     }
-    else if(o==='minus'){
+    else if(o === 'minus' ){
      p = parseFloat(x)-parseFloat(y);
       x = p.toString();
     }
-    else if(o==='divide'){
+    else if(o === 'divide' ){
      p = parseFloat(x)/parseFloat(y);
       x = p.toString();
     }
-    else if(o==='multiply'){
+    else if(o === 'multiply' ){
      p = parseFloat(x)*parseFloat(y);
       x = p.toString();
     }
@@ -45,7 +44,7 @@ function useOperation(){
 //sets the operator(o), if y isn't 0 then performs calculation
 function applyOperation(s){
     o = s;
-  if(y!==""){
+  if(y !== ""){
     useOperation();
   }
 }
@@ -57,22 +56,23 @@ function equals(){
 }
 
 function applyNumber(n){
-  if(o===""){
+  if(o === ""){
     x = x + n;
     updateDisplay(x);
   }
   else{
     y = y + n;
     updateDisplay(y);
+    console.log("hello from applyNumber()");
   }
 }
 
 function negate(){
-  if(o===""&&parseFloat(x) > 0){
+  if(o === "" && parseFloat(x) > 0){
     x = "-" + x;
     updateDisplay(x);
   }
-  else if( o === "" && parseFloat(x) <0 ){
+  else if( o === "" && parseFloat(x) < 0){
     x = x.substring(1);
     updateDisplay(x);
   }
@@ -84,7 +84,8 @@ function negate(){
     y = y.substring(1);
     updateDisplay(y);
 }
-
+//I don't even have a percent button on my calculator
+//must update index.html
 function percent(){
   if(y===""){
     p = parseFloat(x) * 0.01;
@@ -102,6 +103,7 @@ function clear(){
   y = "";
   o = "";
   updateDisplay(x);
+  return console.log("hello from the clear function");
 }
 
 
