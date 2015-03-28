@@ -98,7 +98,7 @@ function percent(){
     updateDisplay();
 }
 
-function clear(){
+function clearAll(){
   x = "0";
   y = "";
   o = "";
