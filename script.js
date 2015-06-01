@@ -83,6 +83,7 @@ function negate() {
 }
 //I don't even have a percent button on my calculator
 //must update index.html
+<<<<<<< HEAD
 // function percent() {
 //     if (y === "") {
 //         p = parseFloat(x) * 0.01;
@@ -102,3 +103,42 @@ function clear1() {
     updateDisplay(x);
     console.log("function: clear1 \nn: " + n + "\nx: " + x + "\ny: " + y + "\no: " + o + "\np: " + p);
 }
+=======
+function percent(){
+  if(y===""){
+    p = parseFloat(x) * 0.01;
+    x = p.toString();
+    updateDisplay();
+  }
+  else
+    p = parseFloat(y) * 0.01;
+    y = p.toString();
+    updateDisplay();
+}
+
+function clearAll(){
+  x = "0";
+  y = "";
+  o = "";
+  updateDisplay(x);
+  return console.log("hello from the clear function");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> origin/master
